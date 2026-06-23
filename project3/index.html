@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المشروع الثالث - JavaScript</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .project{max-width:820px;margin:48px auto;padding:24px;background:var(--content-bg);border-radius:12px}
+    .controls{display:flex;gap:12px;align-items:center}
+    .count{font-weight:700;color:var(--brand-2);font-size:1.25rem}
+    button{padding:8px 12px;border-radius:8px;border:0;background:var(--brand-2);color:#fff;cursor:pointer}
+  </style>
+</head>
+<body>
+  <main class="project">
+    <h1>المشروع الثالث: مثال JavaScript تفاعلي</h1>
+    <p>هذه صفحة توضح مثالًا بسيطًا على استخدام JavaScript للتفاعل مع الصفحة.</p>
+
+    <h2>عداد بسيط</h2>
+    <div class="controls">
+      <button id="decrement">-</button>
+      <div class="count" id="count">0</div>
+      <button id="increment">+</button>
+      <button id="reset">إعادة تعيين</button>
+    </div>
+
+    <h2>تشغيل كود JavaScript</h2>
+    <p>انقر على الأزرار لزيادة أو إنقاص العداد. الكود يعمل بدون مكتبات خارجية.</p>
+
+    <a class="back" href="/">← العودة إلى الصفحة الرئيسية</a>
+  </main>
+
+  <script>
+    (function(){
+      const countEl = document.getElementById('count');
+      let value = 0;
+
+      function render(){
+        countEl.textContent = value;
+      }
+
+      document.getElementById('increment').addEventListener('click', ()=>{ value++; render(); });
+      document.getElementById('decrement').addEventListener('click', ()=>{ value--; render(); });
+      document.getElementById('reset').addEventListener('click', ()=>{ value = 0; render(); });
+
+      // Initialize
+      render();
+    })();
+  </script>
+</body>
+</html>
