@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المشروع الثاني - أساسيات CSS</title>
+</head>
+<body>
+
+<section class="project-content">
+    <h1>المشروع الثاني: أساسيات CSS</h1>
+
+    <p>
+        هذه صفحة بسيطة لمشروع CSS توضح كيفية تنسيق صفحات الويب
+        باستخدام الأنماط المختلفة وتحسين المظهر العام للموقع.
+    </p>
+
+    <h2>محتويات المشروع</h2>
+    <ul>
+        <li>تنسيق النصوص والعناوين.</li>
+        <li>تغيير الألوان والخلفيات.</li>
+        <li>استخدام الهوامش والمسافات (Margin & Padding).</li>
+        <li>تصميم الأزرار والقوائم.</li>
+        <li>جعل الصفحة متجاوبة مع الجوال.</li>
+    </ul>
+
+    <h2>مثال كود CSS</h2>
+
+    <pre>
+body{
+    background:#f4f4f4;
+    font-family:Arial, sans-serif;
+}
+
+h1{
+    color:#0077cc;
+    text-align:center;
+}
+
+.btn{
+    background:#0077cc;
+    color:white;
+    padding:10px 20px;
+}
+    </pre>
+
+    <p>
+        يساعد CSS على تحسين تجربة المستخدم وجعل المواقع أكثر
+        احترافية وسهولة في الاستخدام.
+    </p>
+
+    <a href="../index.html">← العودة إلى الصفحة الرئيسية</a>
+</section>
+
+</body>
+</html>
