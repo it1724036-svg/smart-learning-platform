@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>المشروع الثاني - محتوى جديد</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="style.css">
   <style>
     /* Local overrides for the project page */
-    body{background:linear-gradient(135deg,var(--brand-2),var(--brand-1));}
-    .project{max-width:820px;margin:48px auto;padding:24px;background:var(--content-bg);border-radius:12px}
-    .project h1{margin-top:0;color:var(--brand-2)}
-    .back{display:inline-block;margin-top:16px;color:var(--brand-2);text-decoration:none}
+    body{background:linear-gradient(135deg,#667eea,#764ba2);}
+    .project{max-width:820px;margin:48px auto;padding:24px;background:white;border-radius:12px}
+    .project h1{margin-top:0;color:#667eea}
+    .back{display:inline-block;margin-top:16px;color:#667eea;text-decoration:none}
+    .projects-links{display:flex;flex-wrap:wrap;gap:15px;margin:30px 0}
+    .project-link{flex:1;min-width:150px;padding:15px;background:#f0f0f0;border-radius:8px;text-align:center;text-decoration:none;color:#333;border:2px solid #667eea;transition:0.3s}
+    .project-link:hover{background:#667eea;color:white;transform:translateY(-3px)}
   </style>
 </head>
 <body>
@@ -27,6 +30,14 @@
 
     <h2>التحديثات</h2>
     <p>تم إضافة المزيد من الميزات والتحسينات لتوفير تجربة أفضل للمستخدمين.</p>
+
+    <h2>المشاريع الأربعة</h2>
+    <div class="projects-links">
+      <a href="https://it1724036-svg.github.io/smart-learning-platform/project1/" class="project-link">المشروع الأول</a>
+      <a href="https://it1724036-svg.github.io/smart-learning-platform/project2/" class="project-link">المشروع الثاني</a>
+      <a href="https://it1724036-svg.github.io/smart-learning-platform/project3/" class="project-link">المشروع الثالث</a>
+      <a href="https://it1724036-svg.github.io/smart-learning-platform/project4/" class="project-link">المشروع الرابع</a>
+    </div>
 
     <a class="back" href="/">← العودة إلى الصفحة الرئيسية</a>
   </main>
